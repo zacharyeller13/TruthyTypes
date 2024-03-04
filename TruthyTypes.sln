@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TruthyTypes", "TruthyTypes\TruthyTypes.csproj", "{DE0D7702-5FFD-44CB-B136-D5C93560A50E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTruthyTypes", "TestTruthyTypes\TestTruthyTypes.csproj", "{669282A8-15D1-4445-AB93-E3600CB830EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{DE0D7702-5FFD-44CB-B136-D5C93560A50E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE0D7702-5FFD-44CB-B136-D5C93560A50E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE0D7702-5FFD-44CB-B136-D5C93560A50E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{669282A8-15D1-4445-AB93-E3600CB830EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669282A8-15D1-4445-AB93-E3600CB830EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669282A8-15D1-4445-AB93-E3600CB830EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669282A8-15D1-4445-AB93-E3600CB830EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
