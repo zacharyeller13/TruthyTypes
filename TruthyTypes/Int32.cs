@@ -28,12 +28,7 @@ public readonly struct Int32
 
     public override bool Equals(object? obj)
     {
-        if (obj is not Int32 int32)
-        {
-            return false;
-        }
-
-        return _value == int32._value;
+        return obj is Int32 int32 && Equals(int32);
     }
 
     public override int GetHashCode()

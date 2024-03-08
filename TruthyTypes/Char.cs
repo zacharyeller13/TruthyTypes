@@ -9,9 +9,9 @@ public static class CharExtensions
 }
 
 /// <summary>
-/// Class <c>Char</c> wraps the built-in <c>char</c> type to shoehorn in truthiness and falsiness
+/// Struct <c>Char</c> re-implements parts of the built-in <c>char</c> type to shoehorn in truthiness and falsiness
 /// </summary>
-public class Char
+public readonly struct Char
 {
     private readonly char _value;
 
@@ -20,7 +20,7 @@ public class Char
     /// Is private because we will always implicitly convert a <c>char</c> to a <c>Char</c>
     /// <code>Char newChar = 'c'</code> will essentially do <code>Char newChar = new('c')</code> behind the scenes
     /// </summary>
-    /// <param name="chr">An character literal</param>
+    /// <param name="chr">A character literal</param>
     private Char(char chr)
     {
         _value = chr;
@@ -31,12 +31,12 @@ public class Char
     public static implicit operator char(Char chr) => chr._value;
     public static implicit operator Char(char chr) => new(chr);
 
-    private bool Equals(Char? other) => _value == other?._value;
+    private bool Equals(Char other) => _value == other._value;
     public override string ToString() => _value.ToString();
 
     public override bool Equals(object? obj)
     {
-        return Equals(obj as Char);
+        return obj is Char chr && Equals(chr);
     }
 
     public override int GetHashCode()
