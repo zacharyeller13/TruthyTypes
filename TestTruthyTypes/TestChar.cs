@@ -19,7 +19,7 @@ public class TestChar
     [Fact]
     public void TestCharEquality()
     {
-        char left = 'A';
+        const char left = 'A';
         Char right = 'A';
 
         Assert.True(left == right);

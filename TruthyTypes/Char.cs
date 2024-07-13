@@ -43,4 +43,14 @@ public readonly struct Char
     {
         return _value.GetHashCode();
     }
+    
+    public static bool operator ==(Char left, Char right)
+    {
+        return left.Equals(right);
+    }
+
+    public static bool operator !=(Char left, Char right)
+    {
+        return !left.Equals(right);
+    }
 }

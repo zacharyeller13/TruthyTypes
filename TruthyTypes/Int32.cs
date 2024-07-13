@@ -43,6 +43,6 @@ public readonly struct Int32
 
     public static bool operator !=(Int32 left, Int32 right)
     {
-        return !(left == right);
+        return !left.Equals(right);
     }
 }

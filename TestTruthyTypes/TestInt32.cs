@@ -18,9 +18,18 @@ public class TestInt32
     [Fact]
     public void TestIntEquality()
     {
-        int normalInt = 1;
+        const int normalInt = 1;
         Int32 truthyInt = 1;
         
         Assert.True(normalInt == truthyInt);
+    }
+
+    [Fact]
+    public void TestCompare()
+    {
+        const int normalInt = 1;
+        Int32 truthyInt = 2;
+        
+        Assert.True(normalInt < truthyInt);
     }
 }
